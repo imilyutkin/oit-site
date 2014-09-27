@@ -2,7 +2,7 @@ var gulp = require('gulp'),
     minifycss = require('gulp-minify-css'),
     uglify = require('gulp-uglify'),
     rename = require('gulp-rename'),
-    typescript = require('typescript'),
+    typescript = require('gulp-typescript'),
     notify = require('gulp-notify'),
     del = require('del');
 
