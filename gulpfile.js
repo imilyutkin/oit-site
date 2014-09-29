@@ -15,10 +15,13 @@ var gulp = require('gulp'),
     });
 
     gulp.task('clean', function(cb) {
-        del(['build/assets/css'], cb)
+        del(['build/assets/css'], cb);
     });
 
     gulp.task('default', ['clean'], function() {
         gulp.start('styles');
     });
 
+    gulp.task('watch', function() {
+      gulp.watch("src/styles/*.css", ['styles']);
+    });
