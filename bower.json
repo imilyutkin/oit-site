@@ -1,0 +1,23 @@
+{
+  "name": "oit-site",
+  "version": "0.0.0",
+  "homepage": "https://github.com/imilyutkin/oit-site",
+  "authors": [
+    "i.milyutkin <i.milyutkin@itransition.com>"
+  ],
+  "moduleType": [
+    "amd"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "~2.1.1",
+    "pure": "~0.5.0"
+  }
+}
