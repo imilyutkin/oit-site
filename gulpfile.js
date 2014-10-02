@@ -16,12 +16,24 @@ var gulp = require('gulp'),
 
     gulp.task('clean', function(cb) {
         del(['build/assets/css'], cb);
+        del(['build/assets/js'], cb);
+    });
+
+    gulp.task('scripts', function() {
+        return gulp.src('src/scripts/test_typescript.ts')
+        .pipe(rename({suffix: '.min'}))
+        .pipe(typescript(''))
+        .pipe(uglify(''))
+        .pipe(gulp.dest('build/assets/js'))
+        .pipe(notify({ message: 'Scripts task complete' }));
     });
 
     gulp.task('default', ['clean'], function() {
         gulp.start('styles');
+        gulp.start('scripts');
     });
 
     gulp.task('watch', function() {
+      gulp.watch("src/scripts/*.ts", ['scripts']);
       gulp.watch("src/styles/*.css", ['styles']);
     });
