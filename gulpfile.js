@@ -7,24 +7,24 @@ var gulp = require('gulp'),
     del = require('del');
 
     gulp.task('styles', function(){
-        return gulp.src('src/styles/footer.css')
+        return gulp.src('app/src/styles/footer.css')
         .pipe(rename({suffix: '.min'}))
         .pipe(minifycss())
-        .pipe(gulp.dest('build/assets/css'))
+        .pipe(gulp.dest('app/build/assets/css'))
         .pipe(notify({ message: 'Styles task complete' }));
     });
 
     gulp.task('clean', function(cb) {
-        del(['build/assets/css'], cb);
-        del(['build/assets/js'], cb);
+        del(['app/build/assets/css'], cb);
+        del(['app/build/assets/js'], cb);
     });
 
     gulp.task('scripts', function() {
-        return gulp.src('src/scripts/test_typescript.ts')
+        return gulp.src('app/src/scripts/test_typescript.ts')
         .pipe(rename({suffix: '.min'}))
         .pipe(typescript(''))
         .pipe(uglify(''))
-        .pipe(gulp.dest('build/assets/js'))
+        .pipe(gulp.dest('app/build/assets/js'))
         .pipe(notify({ message: 'Scripts task complete' }));
     });
 
@@ -34,6 +34,6 @@ var gulp = require('gulp'),
     });
 
     gulp.task('watch', function() {
-      gulp.watch("src/scripts/*.ts", ['scripts']);
-      gulp.watch("src/styles/*.css", ['styles']);
+      gulp.watch("app/src/scripts/*.ts", ['scripts']);
+      gulp.watch("app/src/styles/*.css", ['styles']);
     });
