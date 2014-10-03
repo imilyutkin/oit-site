@@ -3,12 +3,14 @@ var gulp = require('gulp'),
     uglify = require('gulp-uglify'),
     rename = require('gulp-rename'),
     notify = require('gulp-notify'),
+    concat = require('gulp-concat'),
     del = require('del');
 
     gulp.task('styles', function(){
         return gulp.src('app/src/css/*.css')
         // .pipe(rename({suffix: '.min'}))
         .pipe(minifycss())
+        .pipe(concat('styles.css'))
         .pipe(gulp.dest('app/build/assets/css'))
         .pipe(notify({ message: 'Styles task complete' }));
     });
