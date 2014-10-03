@@ -6,7 +6,7 @@ var gulp = require('gulp'),
     del = require('del');
 
     gulp.task('styles', function(){
-        return gulp.src('app/src/styles/footer.css')
+        return gulp.src('app/src/css/footer.css')
         .pipe(rename({suffix: '.min'}))
         .pipe(minifycss())
         .pipe(gulp.dest('app/build/assets/css'))
@@ -20,7 +20,7 @@ var gulp = require('gulp'),
     });
 
     gulp.task('scripts', function() {
-        return gulp.src('app/src/scripts/*.js')
+        return gulp.src('app/src/js/*.js')
         .pipe(rename({suffix: '.min'}))
         .pipe(uglify(''))
         .pipe(gulp.dest('app/build/assets/js'))
@@ -39,7 +39,7 @@ var gulp = require('gulp'),
     });
 
     gulp.task('watch', function() {
-      gulp.watch("app/src/scripts/*.js", ['scripts']);
-      gulp.watch("app/src/styles/*.css", ['styles']);
+      gulp.watch("app/src/js/*.js", ['scripts']);
+      gulp.watch("app/src/css/*.css", ['styles']);
       gulp.watch("app/src/*.html", ['pages']);
     });
