@@ -16,7 +16,8 @@ var gulp = require('gulp'),
 
     gulp.task('clean', function(cb) {
         del(['app/build/assets/css']);
-        del(['app/build/assets/js'], cb);
+        del(['app/build/assets/js']);
+        del(['app/build/assets'], cb);
     });
 
     gulp.task('scripts', function() {
@@ -28,12 +29,19 @@ var gulp = require('gulp'),
         .pipe(notify({ message: 'Scripts task complete' }));
     });
 
+    gulp.task('pages', function(){
+        gulp.src('app/src/*.html')
+          .pipe(gulp.dest('app/build/assets'));
+    });
+
     gulp.task('default', ['clean'], function() {
         gulp.start('styles');
         gulp.start('scripts');
+        gulp.start('pages');
     });
 
     gulp.task('watch', function() {
       gulp.watch("app/src/scripts/*.ts", ['scripts']);
       gulp.watch("app/src/styles/*.css", ['styles']);
+      gulp.watch("app/src/*.html", ['pages']);
     });
