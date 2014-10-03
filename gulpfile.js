@@ -22,11 +22,21 @@ var gulp = require('gulp'),
     });
 
     gulp.task('scripts', function() {
-        return gulp.src('app/src/js/*.js')
+        return gulp.src('app/src/js/**.js')
         .pipe(rename({suffix: '.min'}))
         .pipe(uglify(''))
         .pipe(gulp.dest('app/build/assets/js'))
         .pipe(notify({ message: 'Scripts task complete' }));
+    });
+
+    gulp.task('styleLibs', function(){
+        return gulp.src('app/src/css/libs/*.css')
+          .pipe(gulp.dest('app/build/assets/css/libs'))
+    });
+
+    gulp.task('scriptsLibs', function(){
+        return gulp.src('app/src/js/libs/*.js')
+          .pipe(gulp.dest('app/build/assets/js/libs'))
     });
 
     gulp.task('pages', function(){
@@ -36,7 +46,9 @@ var gulp = require('gulp'),
 
     gulp.task('default', ['clean'], function() {
         gulp.start('styles');
+        gulp.start('styleLibs');
         gulp.start('scripts');
+        gulp.start('scriptsLibs');
         gulp.start('pages');
     });
 
