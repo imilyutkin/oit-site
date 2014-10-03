@@ -15,7 +15,7 @@ var gulp = require('gulp'),
     });
 
     gulp.task('clean', function(cb) {
-        del(['app/build/assets/css'], cb);
+        del(['app/build/assets/css']);
         del(['app/build/assets/js'], cb);
     });
 
