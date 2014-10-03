@@ -6,8 +6,8 @@ var gulp = require('gulp'),
     del = require('del');
 
     gulp.task('styles', function(){
-        return gulp.src('app/src/css/footer.css')
-        .pipe(rename({suffix: '.min'}))
+        return gulp.src('app/src/css/*.css')
+        // .pipe(rename({suffix: '.min'}))
         .pipe(minifycss())
         .pipe(gulp.dest('app/build/assets/css'))
         .pipe(notify({ message: 'Styles task complete' }));

@@ -1,0 +1,11 @@
+@import url(css-reset.css);
+@import url(footer.css);
+@import url(header.css);
+
+.layout-line {
+	margin: auto;
+	width: 80%;
+}
+.layout-line-100 {
+	width: 100%;
+}
