@@ -2,7 +2,6 @@ var gulp = require('gulp'),
     minifycss = require('gulp-minify-css'),
     uglify = require('gulp-uglify'),
     rename = require('gulp-rename'),
-    typescript = require('gulp-typescript'),
     notify = require('gulp-notify'),
     del = require('del');
 
@@ -21,9 +20,8 @@ var gulp = require('gulp'),
     });
 
     gulp.task('scripts', function() {
-        return gulp.src('app/src/scripts/test_typescript.ts')
+        return gulp.src('app/src/scripts/*.js')
         .pipe(rename({suffix: '.min'}))
-        .pipe(typescript(''))
         .pipe(uglify(''))
         .pipe(gulp.dest('app/build/assets/js'))
         .pipe(notify({ message: 'Scripts task complete' }));
@@ -41,7 +39,7 @@ var gulp = require('gulp'),
     });
 
     gulp.task('watch', function() {
-      gulp.watch("app/src/scripts/*.ts", ['scripts']);
+      gulp.watch("app/src/scripts/*.js", ['scripts']);
       gulp.watch("app/src/styles/*.css", ['styles']);
       gulp.watch("app/src/*.html", ['pages']);
     });
