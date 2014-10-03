@@ -39,6 +39,16 @@ var gulp = require('gulp'),
           .pipe(gulp.dest('app/build/assets/js/libs'))
     });
 
+    gulp.task('images', function(){
+        return gulp.src('app/src/images/*.png')
+          .pipe(gulp.dest('app/build/assets/images/'))
+    });
+
+    gulp.task('icons', function(){
+        return gulp.src('app/src/images/icons/*.svg')
+          .pipe(gulp.dest('app/build/assets/images/icons'))
+    });
+
     gulp.task('pages', function(){
         gulp.src('app/src/*.html')
           .pipe(gulp.dest('app/build/assets'));
@@ -50,6 +60,8 @@ var gulp = require('gulp'),
         gulp.start('scripts');
         gulp.start('scriptsLibs');
         gulp.start('pages');
+        gulp.start('images');
+        gulp.start('icons');
     });
 
     gulp.task('watch', function() {
