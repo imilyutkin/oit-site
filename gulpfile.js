@@ -35,12 +35,14 @@ var gulp = require('gulp'),
     });
 
     gulp.task('scriptsLibs', function(){
-        return gulp.src('app/src/js/libs/*.js')
-          .pipe(gulp.dest('app/build/assets/js/libs'))
+        gulp.src('app/src/js/libs/*.js')
+          .pipe(gulp.dest('app/build/assets/js/libs'));
     });
 
     gulp.task('images', function(){
-        return gulp.src('app/src/images/*.png')
+        gulp.src('app/src/images/*.png')
+          .pipe(gulp.dest('app/build/assets/images/'))
+        return gulp.src( 'app/src/images/pcap/*.png')
           .pipe(gulp.dest('app/build/assets/images/'))
     });
 

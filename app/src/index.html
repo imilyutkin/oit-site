@@ -8,12 +8,13 @@
 
     <script src="js/libs/jquery.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/libs/jquery.dropdown.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/libs/jquery.jcarousel.min.js" type="text/javascript" charset="utf-8"></script>
 </head>
 <body>
     <header class="header">
         <div class="layout-line">
             <div class="logo">
-                <span>Milyutkin </span>Ivan
+                <span></span>
             </div>
             <div class="menu-container">
                 <nav>
@@ -43,6 +44,18 @@
     </header>
 
     <div class="content content-center ">
+    	<article class="content-layout-line">
+    		<div class="jcarousel">
+                    <ul>
+                        <li><img src="images/img1.png" width="600" height="400" alt=""></li>
+                        <li><img src="images/img2.png" width="600" height="400" alt=""></li>
+                        <li><img src="images/img3.png" width="600" height="400" alt=""></li>
+                        <li><img src="images/img4.png" width="600" height="400" alt=""></li>
+                        <li><img src="images/img5.png" width="600" height="400" alt=""></li>
+                    </ul>
+                </div>
+    	</article>
+
         <article class="content-layout-line">
         <header class="content-header">
             Информационная система ведения проектов
@@ -162,5 +175,11 @@
             </div>
         </div>
     </footer>
+
+    <script>
+    	$(function(){
+    		$('.jcarousel').jcarousel();
+    	});
+    </script>
 </body>
 </html>
