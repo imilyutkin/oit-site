@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Главная страница</title>
+    <link rel="stylesheet" href="css/common.css">
+    <link rel="stylesheet" href="css/content.css">
+    <link rel="stylesheet" href="css/css-reset.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/header.css">
+
+    <script src="js/libs/jquery.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/libs/jquery.dropdown.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/libs/jquery.jcarousel.min.js" type="text/javascript" charset="utf-8"></script>
+</head>
+<body>
+    <header class="header">
+        <div class="layout-line">
+            <div class="logo">
+                <span></span>
+            </div>
+            <div class="menu-container">
+                <nav>
+                    <div class="menu">
+                        <ul id="navigation-bar">
+                            <li class="link"><a href="#" class="link-menu link-menu-active">ГЛАВНАЯ</a></li>
+                            <li class="link"><a href="#" class="link-menu link-menu-dropdown" data-dropdown="#categories">ПРОЕКТ</a></li>
+                            <li class="link"><a href="#" class="link-menu">АВТОР</a></li>
+                            <li class="link"><a href="#" class="link-menu">РУКОВОДИТЕЛЬ</a></li>
+                            <div id="categories" class="dropdown dropdown-tip">
+                                <ul class="dropdown-menu">
+                                    <li><a href="#1">Аналитическая часть</a></li>
+                                    <li><a href="#2">Постановка задачи</a></li>
+                                    <li><a href="#3">Эргономическое проектирование</a></li>
+                                    <li><a href="#3">Системное проектирование</a></li>
+                                    <li><a href="#3">Программное проектирование</a></li>
+                                </ul>
+                            </div>
+                            <div class="clear"></div>
+                        </ul>
+                        <div class="clear"></div>
+                    </div>
+                </nav>
+            </div>
+            <div class="clear"></div>
+        </div>
+    </header>
+
+    <div class="content content-center ">
+    	<article class="content-layout-line">
+    		<div class="jcarousel">
+                    <ul>
+                        <li><img src="images/pcap/img1.png" width="600" height="400" alt=""></li>
+                        <li><img src="images/pcap/img2.png" width="600" height="400" alt=""></li>
+                        <li><img src="images/pcap/img3.png" width="600" height="400" alt=""></li>
+                        <li><img src="images/pcap/img4.png" width="600" height="400" alt=""></li>
+                        <li><img src="images/pcap/img5.png" width="600" height="400" alt=""></li>
+                    </ul>
+                </div>
+    	</article>
+
+        <article class="content-layout-line">
+        <header class="content-header">
+            Информационная система ведения проектов
+        </header>
+        <article class="content-article">
+            <p class="content-paragraph">
+                Любой проект в сферах строительства, разработки программного обеспечения, производства товаров, а также разработки нефтяных месторождений подразумевает под собой разработку комплексной технической документации c участием представителей множества дисциплин. Актуальность темы диплома обусловлена тем, что на данный момент на рынке нет подобных систем, которые бы автоматизировали процесс подготовки документации, а также минимизировали потери от ошибок, допускаемых в рамках разработки.
+            </p>
+            <p class="content-paragraph">
+                Подготовка пакета документов длительный и сложный процесс. Процесс разработки документов состоит из следующих основных стадий подготовки документа: создание, согласование, доработка и утверждение. Каждый документ имеет свой срок подготовки и зависит от готовности других доку-ментов. В связи с количеством документов, а также с тем, что они относятся к различным дисциплинам, в процессе подготовки пакета документов участвует команда, состоящая из большого числа специалистов. Каждый член ко-манды отвечает за какую-либо дисциплину и имеет свою область ответствен-ности.
+            </p>
+            <p class="content-paragraph">
+                Основным технологическим средством автоматизации проектирования в машиностроении является компьютер, оперирующий с информацией, представленной в цифровой форме и физически существующей в виде различных состояний их элементов. Поэтому возникает необходимость в разработке методов превращения разнообразной конструкторской документации в цифровую форму и представлении всех задач и элементов процесса проектирования только в виде операций над числами и логическими выражениями с доведением их до алгоритмов и машинных программ. Но при автоматизации процесса разработки технической документации следует постоянно помнить, что компьютер это вспомогательное средство, а не замена разработчика.
+            </p>
+            <p class="content-paragraph">
+                В результате проведённого анализа можно сделать вывод, что основ-ные проблемы в области разработки комплексной технической документации связаны с процессами назначения ответственных за подготовку конкретного документа, а также со сложностью контроля и управления процессом подго-товки документов. Важную роль играет также сбор информации о текущем состоянии готовности по ходу работы.
+            </p>
+            <p class="content-paragraph">
+                Проведя анализ предметной области, выявив основные проблемы и изучив предложения рынка систем управления проектами, сделан вывод о том, что на рынке нет такой системы управления проектов, которая полно-стью решает перечисленные проблемы.
+            </p>
+            <p class="content-paragraph">
+                Целью дипломного проекта является разработка системы, которая слу-жит для управления проектами отделов, включающими разработку ком-плексной технической документации c участием представителей множе-ственных дисциплин. Основной задачей системы является обеспечение кон-троля над созданием, согласованием и утверждением документов во время жизненного цикла проекта согласно настроенным проектным матрицам RACI.
+            </p>
+            <p class="content-paragraph">
+                Разрабатываемая система позволит сэкономить время на вынужденных коммуникациях и регулировании процесса подготовки документов, избавит от возможных ошибок делегирования выполнения задач, позволяет контро-лировать процесс работы, также прогнозировать слабые места и задержки в процессе разработки. Также позволит контролировать процесс ведения про-екта, сократит время, которое уходит на подготовку отчёта о состоянии за-вершённости проекта, а также готовность документов по каждой из дисци-плин.
+            </p>
+        </article>
+    </article>
+    </div>
+    
+
+    <footer>
+        <div class="footer-up">
+            <div class="layout-line">
+                <div class="info">
+                    <header><span>Milyutkin</span> Ivan</header>
+                    <article>
+                        Окончил "Белорусский государственный университет информатики и радиоэлектроники" в 2014 году, по специальности "Инженерно-психологическое обеспечение информационных технологий". Работаю SharePoint/.NET developer в Itransition c 2012 года.
+                    </article>
+                    <footer>
+                        <div class="phone">Phone: <span>(044) 554 97 78</span></div>
+                        <div class="email">e-mail: <span>ivam.milyutkin@gmail.com</span></div>
+                    </footer>
+                </div>
+                <div class="company">
+                    <header>
+                        О проекте
+                    </header>
+                    <!-- <article>
+                        <ul>
+                            <li><i>&#9999;</i><a href="#"><span>About</span></a></li>
+                            <li><i>&#9999;</i><a href="#"><span>FAQ</span></a></li>
+                            <li><i>&#9999;</i><a href="#"><span>Contact</span></a></li>
+                            <li><i>&#9999;</i><a href="#"><span>Terms</span></a></li>
+                            <li><i>&#9999;</i><a href="#"><span>Privacy</span></a></li>
+                            <li><i>&#9999;</i><a href="#"><span>Testimonials</span></a></li>
+                        </ul>
+                    </article> -->
+                </div>
+                <div class="community">
+                    <header>
+                        Участники
+                    </header>
+                    <!-- <article>
+                        <ul>
+                            <li><i>&#9999;</i><a href="#"><span>Blog</span></a></li>
+                            <li><i>&#9999;</i><a href="#"><span>Forum</span></a></li>
+                            <li><i>&#9999;</i><a href="#"><span>Support</span></a></li>
+                            <li><i>&#9999;</i><a href="#"><span>Newsletter</span></a></li>
+                        </ul>
+                    </article> -->
+                </div>
+                <div class="from-the-blog">
+                    <header><i>из</i><span> хроники</span></header>
+                    <article>
+                        <div class="image-rectangle">
+                            <span class="icon-image"></span>
+                        </div>
+                        <div class="text-block">
+                            <div class="text">
+                                Выступление на конференции по теме "Информационная система ведения проектов"
+                            </div>  
+                            <div class="date">30 Марта 2014</div>
+                        </div>
+                        <div class="clear"></div>
+                    </article>
+                    <article>
+                        <div class="image-rectangle">
+                            <span class="icon-image"></span>
+                        </div>
+                        <div class="text-block">
+                            <div class="text">
+                                Защита диплома по теме "Информационная система ведения проектов"
+                            </div>  
+                            <div class="date">16 Июня 2014</div>
+                        </div>
+                        <div class="clear"></div>
+                    </article>
+                </div>
+                <div class="clear"></div>
+            </div>
+        </div>
+        <div class="footer-down">
+            <div class="layout-line">
+                <div class="footer-info">
+                    <div class="footer-company">
+                        2014 Milyutkin Ivan
+                    </div>
+                    <div class="social-networks">
+                        <a href="https://www.facebook.com/ivan.milyutkin"><div class="social-icon facebook"></div></a>
+                        <div class="social-icon google"></div>
+                        <a href="https://twitter.com/imilyutkin"><div class="social-icon twitter"></div></a>
+                        <div class="social-icon rss"></div>
+                    </div>
+                    <div class="clear"></div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+    	$(function(){
+    		$('.jcarousel').jcarousel();
+    	});
+    </script>
+</body>
+</html>
