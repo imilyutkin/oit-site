@@ -1,0 +1,47 @@
+.author {
+    float: left;
+    width: 50%;
+    text-align: center;
+}
+.author-description {
+    float: right;
+    width: 50%;D
+    padding: 20px 0px;
+}
+.author-photo {
+    vertical-align: middle;
+}
+.author-information {
+    padding: 30px;
+    text-align: center;
+}
+.author-name {
+    font-size: 28px;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+.author-regards {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+.author-info {
+    font-size: 20px;
+}
+div.author-info div span {
+    font-weight: bold;
+}
+.author-describing {
+    width: 80%;
+    padding: 20px;
+    margin: auto;
+}
+.author-describing header {
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 0px;
+}
+.publication {
+    padding: 5px 0px;
+    font-size: 20px;
+}
