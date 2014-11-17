@@ -9,16 +9,42 @@
     <link rel="stylesheet" href="css/css-reset.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/author.css">
+    <link rel="stylesheet" href="css/slider-pro.min.css">
 
     <script src="js/libs/jquery.min.js" type="text/javascript" charset="utf-8"></script>
     <script src="js/libs/jquery.dropdown.min.js" type="text/javascript" charset="utf-8"></script>
-    <script src="js/libs/jquery.jcarousel.min.js" type="text/javascript" charset="utf-8"></script>
+    <script src="js/libs/jquery.sliderPro.min.js" type="text/javascript" charset="utf-8"></script>
+
+<script type="text/javascript">
+    $( document ).ready(function( $ ) {
+        $( '#example1' ).sliderPro({
+            width: 960,
+            height: 500,
+            arrows: true,
+            buttons: false,
+            waitForLayers: true,
+            thumbnailWidth: 200,
+            thumbnailHeight: 100,
+            thumbnailPointer: true,
+            autoplay: false,
+            autoScaleLayers: false,
+            breakpoints: {
+                500: {
+                    thumbnailWidth: 120,
+                    thumbnailHeight: 50
+                }
+            }
+        });
+    });
+</script>
+
 </head>
 <body>
     <header class="header">
         <div class="layout-line">
             <div class="logo">
-                <span></span>
+                Project Control and Assurance Plan<span></span>
             </div>
             <div class="menu-container">
                 <nav>
@@ -47,7 +73,7 @@
         </div>
     </header>
 
-    <div class="content content-center ">
+<!--     <div class="content content-center ">
     	<article class="content-layout-line">
     		<div class="jcarousel">
                     <ul>
@@ -58,6 +84,7 @@
                         <li><img src="images/pcap/img5.png" width="600" height="400" alt=""></li>
                     </ul>
                 </div>
+
     	</article>
 
         <article class="content-layout-line">
@@ -87,9 +114,72 @@
                 Разрабатываемая система позволит сэкономить время на вынужденных коммуникациях и регулировании процесса подготовки документов, избавит от возможных ошибок делегирования выполнения задач, позволяет контро-лировать процесс работы, также прогнозировать слабые места и задержки в процессе разработки. Также позволит контролировать процесс ведения про-екта, сократит время, которое уходит на подготовку отчёта о состоянии за-вершённости проекта, а также готовность документов по каждой из дисци-плин.
             </p>
         </article>
-    </article>
+    </div> -->
+
+    <div class="content">
+
+            <div id="example1" class="slider-pro">
+                <div class="sp-slides">
+                    <div class="sp-slide">
+                        <img class="sp-image" src="../src/css/images/blank.gif"
+                            data-src="images/pcap/img1.png"
+                            data-retina="images/pcap/img1.png"/>
+                    </div>
+
+                    <div class="sp-slide">
+                        <img class="sp-image" src="../src/css/images/blank.gif"
+                            data-src="images/pcap/img2.png"
+                            data-retina="images/pcap/img2.png"/>
+                    </div>
+
+                    <div class="sp-slide">
+                        <img class="sp-image" src="../src/css/images/blank.gif"
+                            data-src="images/pcap/img3.png"
+                            data-retina="images/pcap/img3.png"/>
+
+                    </div>
+
+                    <div class="sp-slide">
+                        <img class="sp-image" src="../src/css/images/blank.gif"
+                            data-src="images/pcap/img4.png"
+                            data-retina="images/pcap/img4.png"/>
+                    </div>
+
+                    <div class="sp-slide">
+                        <img class="sp-image" src="../src/css/images/blank.gif"
+                            data-src="images/pcap/img5.png"
+                            data-retina="images/pcap/img5.png"/>
+                    </div>
+                </div>
+
+                <div class="sp-thumbnails">
+                    <div class="sp-thumbnail">
+                        <div class="sp-thumbnail-title">Управлением проектом</div>
+                        <div class="sp-thumbnail-description">Отслеживание прогресса. Контроль качества.</div>
+                    </div>
+
+                    <div class="sp-thumbnail">
+                        <div class="sp-thumbnail-title">Матрица PCAP</div>
+                        <div class="sp-thumbnail-description">Тонкая настройка и управление матрицей проекта.</div>
+                    </div>
+
+                    <div class="sp-thumbnail">
+                        <div class="sp-thumbnail-title">Контроль</div>
+                        <div class="sp-thumbnail-description">Возможность отслеживания статус и прогресс по задачам.</div>
+                    </div>
+
+                    <div class="sp-thumbnail">
+                        <div class="sp-thumbnail-title">Управление рисками</div>
+                        <div class="sp-thumbnail-description">Возможность прогнозировать риски.</div>
+                    </div>
+
+                    <div class="sp-thumbnail">
+                        <div class="sp-thumbnail-title">Управление документами</div>
+                        <div class="sp-thumbnail-description">Возможность управления проектной документацией.</div>
+                    </div>
+                </div>
+            </div>
     </div>
-    
 
     <footer>
         <div class="footer-up">
@@ -180,10 +270,5 @@
         </div>
     </footer>
 
-    <script>
-    	$(function(){
-    		$('.jcarousel').jcarousel();
-    	});
-    </script>
 </body>
 </html>

@@ -46,3 +46,66 @@ div.author-info div span {
     font-size: 20px;
     text-align: justify;
 }
+
+.slider-pro {
+    padding: 30px 0px;
+}
+
+#example1 {
+    padding: 30px 0px;
+}
+
+/* Example 1 */
+
+#example1 .sp-thumbnail {
+    width: 100%;
+    padding: 8px;
+    background-color: #F0F0F0;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+#example1 .sp-thumbnail-title {
+    margin-bottom: 5px;
+    text-transform: uppercase;
+    color: #333;
+}
+
+#example1 .sp-thumbnail-description {
+    font-size: 14px;
+    color: #333;
+}
+
+@media (max-width: 860px) {
+    #example1 .hide-medium-screen {
+        display: none;
+    }
+}
+
+@media (max-width: 640px) {
+    #example1 .sp-layer {
+        font-size: 12px;
+    }
+
+    #example1 .hide-small-screen {
+        display: none;
+    }
+}
+
+@media (max-width: 500px) {
+    #example1 .sp-thumbnail {
+        text-align: center;
+    }
+
+    #example1 .sp-thumbnail-title {
+        font-size: 12px;
+        text-transform: uppercase;
+    }
+
+    #example1 .sp-thumbnail-description {
+        display: none;
+    }
+}
+.sp-slides-container {
+position: relative;
+}
