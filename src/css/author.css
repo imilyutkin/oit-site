@@ -44,4 +44,5 @@ div.author-info div span {
 .publication {
     padding: 5px 0px;
     font-size: 20px;
+    text-align: justify;
 }
